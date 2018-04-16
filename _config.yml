@@ -89,12 +89,12 @@ comments_provider: gitalk
 #disqus:
 #    username: 
 # https://imsun.net/posts/gitment-introduction/
-#gitment:
-#    owner: mzlogin
-#    repo: blog-comments
-#    oauth:
-#        client_id: d2e1cbbd298958076462
-#        client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+gitment:
+    owner: FantBoy
+    repo: blog-comments
+    oauth:
+        client_id: 8e62ab266a129af79132 
+        client_secret: 2dac5ebbef2c7f92dfc1b259eae59c099e0c26c3 
 # https://github.com/gitalk/gitalk#install
 gitalk:
     owner: FantBoy
