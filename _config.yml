@@ -96,11 +96,11 @@ comments_provider: gitalk
 #        client_id: d2e1cbbd298958076462
 #        client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
 # https://github.com/gitalk/gitalk#install
-gitalk:
-    owner: FantBoy
-    repo: blog-comments
-    clientID: 8e62ab266a129af79132
-    clientSecret: 2dac5ebbef2c7f92dfc1b259eae59c099e0c26c3
+#gitalk:
+#    owner: FantBoy
+#    repo: blog-comments
+#    clientID: 8e62ab266a129af79132
+#    clientSecret: 2dac5ebbef2c7f92dfc1b259eae59c099e0c26c3
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
 
