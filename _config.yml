@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://bearboyxu.cn/site
+url: http://blog.bearboyxu.cn
 date_format: "ordinal"
 title: BearboyXu
 subtitle: "人生没有白走的路，每一步都算数..."
@@ -17,7 +17,7 @@ side_bar_repo_limit: 5
 # ---------------- #
 author: Bearboy xu
 organization: bear
-organization_url: http://bearboyxu.cn
+organization_url: http://blog.bearboyxu.cn
 github_username: FantBoy
 location: Shenzhen, China
 email: bear@bearboyxu.cn
