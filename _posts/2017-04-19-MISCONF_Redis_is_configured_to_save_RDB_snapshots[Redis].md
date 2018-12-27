@@ -13,7 +13,7 @@ categories:
 今天突然redis服务出现了异常，上机器看log，提示说"MISCONF Redis is configured to save RDB snapshots"
 <!--more-->
 
-# 异常详情
+## 异常详情
 
 ``` shell
 Traceback (most recent call last):
@@ -54,11 +54,11 @@ tmpfs                  16G   24K   16G   1% /dev/shm
 
 > 异常含义：Redis被配置为保存数据库快照，但它目前不能持久化到硬盘。用来修改集合数据的命令不能用。请查看Redis日志的详细错误信息
 
-# 原因
+## 原因
 
 强制关闭Redis快照的操作导致不能持久化。**至于为什么会出发这个问题，还没查出来**
 
-# 解决方案
+## 解决方案
 将stop-writes-on-bgsave-error设置为no
 ``` shell
 127.0.0.1:6379> config set stop-writes-on-bgsave-error no

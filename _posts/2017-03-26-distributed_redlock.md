@@ -184,8 +184,7 @@ class distributed_locking(object):
     def __del__(self):  
         print "__del__"
 ```
-
-#### 客户端利用 *distributed_locking()* 完成任务的提取
+#### 客户端利用 `distributed_locking()` 完成任务的提取
 
 ``` python
 

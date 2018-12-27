@@ -15,8 +15,8 @@ categories:
 
 <!--more-->
 
-# try...except...finally... 的正确打开方式
-## try/except捕捉异常
+## try...except...finally... 的正确打开方式
+### try/except捕捉异常
 
 try/except语句用来检测try语句块中的错误，从而让except语句捕获异常信息并处理。
 让程序在出现异常时不强制退出程序
@@ -37,7 +37,7 @@ except ValueError, e:
 invalid literal for int() with base 10: 'bearboyxu'
 ```
 
-## try...except...else
+### try...except...else
 
 ``` python
 try:
@@ -70,7 +70,7 @@ else:
     fh.close()
 ```
 
-## try-finally
+### try-finally
 try-finally 语句无论是否发生异常都将执行最后finally的代码。
 
 ``` python
@@ -83,13 +83,13 @@ raise
 
 `finally`中的语句是无论如何都会执行的。即使在`try`或`except`中执行了`return`操作。
 
-# finally 中出现变量不存在的异常
+## finally 中出现变量不存在的异常
 程序在运行过程中，如果抛出了异常，当程序进入finally时，变量还未被定义：
 ``` python
 local variable 's_path' referenced before assignment
 ```
 
-## 解决方法
+### 解决方法
 ``` python
 if locals().has_key('s_path'):
     #...
