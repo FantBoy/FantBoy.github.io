@@ -12,7 +12,7 @@ categories:
 ---
 
 在一些复杂的django服务中，一般都需要访问多个数据库的数据：自身库+若干外部库。
-django提供了针对数据库的路由功能：[*Database routers*][1]。本文针对该方法，提供一种
+django提供了针对数据库的路由功能：[Database routers][1]。本文针对该方法，提供一种
 是使用多数据库的方法、多个数据库的联用以及多数据库时数据的导入导出方法
 
 <!--more-->
@@ -21,7 +21,7 @@ django提供了针对数据库的路由功能：[*Database routers*][1]。本文
 ### 为每个app都可以单独设置一个数据库
 
 在settings.py中有数据库的相关设置，有一个默认的数据库 default  (*default 是必不可少的*)，
-还可以额外添加其他数据库的配置[*setting.py*的官方配置文档][2]
+还可以额外添加其他数据库的配置[setting.py的官方配置文档][2]
 
 ``` python
 # Database
@@ -57,7 +57,7 @@ DATABASE_APPS_MAPPING = {
  - *DATABASE_ROUTERS* 为数据库路由信息，指向路由类
  - *DATABASE_APPS_MAPPING* 为app与数据库实例的映射关系，不同的APP用不用的数据库，也可以用相同的数据库
 
-### *DatabaseAppsRouter* 定义
+### DatabaseAppsRouter 定义
 在在project_name文件夹中创建 database_router.py 文件
 
 ``` python
@@ -113,7 +113,7 @@ class DatabaseAppsRouter(object):
         return None
 ```
 
-## 使用`using`方法实现多数据库访问
+## 使用using方法实现多数据库访问
 在查询的语句后面用 `using(dbname)` 来指定要操作的数据库
 ``` python
 # 查询
